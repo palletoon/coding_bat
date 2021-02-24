@@ -38,7 +38,7 @@ def sleep_in(weekday, vacation):
         return True
 ```
 
-Then I tried to update the `if` statement to read `if weekday and not vacation:` but I found that python didn't like that because it didn't know that the `weekday` and `vacation` variables were always going to be boolean (i.e., Ture/False) values. So I remembered that there's a new feature in python called [type hinting]() that will allow me to tell python what kind of parameters the function expects. Here's the next version of my code:
+Then I tried to update the `if` statement to read `if weekday and not vacation:` but I found that python didn't like that because it didn't know that the `weekday` and `vacation` variables were always going to be boolean (i.e., Ture/False) values. So I remembered that there's a new feature in python called [type hinting](https://docs.pytest.org/en/stable/contributing.html?highlight=type%20hinting) that will allow me to tell python what kind of parameters the function expects. Here's the next version of my code:
 
 ```python
 def sleep_in(weekday: bool, vacation: bool):
