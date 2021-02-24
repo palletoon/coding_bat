@@ -1,11 +1,12 @@
 '''
-Tests for the sleep_in fuction
+Unit tests for the sleep_in function for [this Coding Bat problem](https://codingbat.com/prob/p173401)
 '''
+# pylint: disable=unused-variable
 
 # import the code to be tested
 from sleep_in import sleep_in
 
-# begin writing tests
+# begin writing tests (top-level test suite)
 def describe_a_sleep_in_fuction():
 
     def that_determines_whether_or_not_we_should_sleep_in():
@@ -15,7 +16,7 @@ def describe_a_sleep_in_fuction():
         2 values each, means we have a total of (2 x 2 = 4) 4 possible
         outcomes to be concerned about.
         '''
-        assert sleep_in(True, True) = True # weekday but on vacation ==> sleep in
-        assert sleep_in(True, False) = True # weekday and NOT on vacation ==> do NOT sleep in
-        assert sleep_in(False, True) = True # weekend and on vacation ==> sleep in
-        assert sleep_in(False, False) = True # weekend but NOT on vacation ==> sleep in
+        assert sleep_in(True, True) == True # weekday but on vacation ==> sleep in
+        assert sleep_in(True, False) == False # weekday and NOT on vacation ==> do NOT sleep in
+        assert sleep_in(False, True) == True # weekend and on vacation ==> sleep in
+        assert sleep_in(False, False) == True # weekend but NOT on vacation ==> sleep in
