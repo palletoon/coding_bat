@@ -5,3 +5,5 @@ In this repository,  I'm recording my progress working through exercises in Pyth
 
 * Warmup-1
     * [sleep_in](https://github.com/palletoon/coding_bat/tree/main/warmup-1/sleep_in)
+    * [monkey_trouble](/warmup-1/monkey_trouble)
+    
